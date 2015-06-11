@@ -1,3 +1,3 @@
 class @HomeController extends RouteController
   data: ->
-    test: "Abc"
+    allSites: Site.find({}, {sort: {position: 1}})

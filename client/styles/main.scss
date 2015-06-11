@@ -162,3 +162,15 @@ figcaption {
 .hide {
   opacity: 0;
 }
+
+footer {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.fluid-block {
+  border: 20px solid $black;
+  position: relative;
+  
+}
