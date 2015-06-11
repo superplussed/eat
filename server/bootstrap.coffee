@@ -181,7 +181,7 @@ Meteor.startup(->
       Site.insert
         name: site.name
         position: site.position
-        dataRange: site.dateRange
+        dateRange: site.dateRange
         description: site.description
         role: site.role
         tech: site.tech

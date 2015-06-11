@@ -1,0 +1,12 @@
+.grid {
+  li {
+    border: 20px solid #121212;
+    display: inline-block;
+    width: 50%;
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
