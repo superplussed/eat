@@ -7,5 +7,6 @@ template(name="siteInfo")
     .detail
       +UI.dynamic template=descriptionTemplate
       .tech-box
-        ul
-          li
+        ul.tech-type
+          each site.tech
+            li(class=type)=name

@@ -1,17 +1,23 @@
 template(name="seedlng")
-  .block
-    img(src='/images/seedlng_new_4.jpg')
-    figcaption
-      h5 The landing page.
+  .grid
+    .column
+      +siteInfo site=site descriptionTemplate=descriptionTemplate
 
-  .block
-    img(src='/images/seedlng_new_3.jpg')
-    figcaption
-      h5 The dashboard view.
-      p The UI is very friendly and bright, while not devolving into looking like it was built for children.
+      .block
+        img(src='/images/seedlng_new_1.jpg')
+        figcaption
+          h5 The flashcard view.
+          p Users can self-identify how well they remembered the card, which will determine when they will see the flashard again.  Notes regarding pronounciation appear after the video has played.
 
-  .block
-    img(src='/images/seedlng_new_1.jpg')
-    figcaption
-      h5 The flashcard view.
-      p Users can self-identify how well they remembered the card, which will determine when they will see the flashard again.  Notes regarding pronounciation appear after the video has played.
+    .column
+      .block
+        img(src='/images/seedlng_new_4.jpg')
+        figcaption
+          h5 The landing page.
+
+      .block
+        img(src='/images/seedlng_new_3.jpg')
+        figcaption
+          h5 The dashboard view.
+          p The UI is very friendly and bright, while not devolving into looking like it was built for children.
+

@@ -1,6 +1,11 @@
 template(name="xpert_sports")
-  .block
-    img(src='/images/xpert_sports_1.jpg')
-    figcaption
-      h5 The home page (rescued from archive.org).
-      p Sadly, I don't have any code or screenshots from this project and had to rely on the "Wayback Machine" for a screenshot.  It's a little broken and dated looking but an accurate representation of the state of design in the early 2000s :)
+  .grid
+    .column
+      +siteInfo site=site descriptionTemplate=descriptionTemplate
+
+    .column
+      .block
+        img(src='/images/xpert_sports_1.jpg')
+        figcaption
+          h5 The home page (rescued from archive.org).
+          p Sadly, I don't have any code or screenshots from this project and had to rely on the "Wayback Machine" for a screenshot.  It's a little broken and dated looking but an accurate representation of the state of design in the early 2000s :)
