@@ -1,4 +1,4 @@
-@SiteGrid = ReactMeteor.createClass
+ReactMeteor.createClass
   templateName: "SiteGrid"
 
   getMeteorState: ->

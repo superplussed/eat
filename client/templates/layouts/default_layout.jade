@@ -11,7 +11,10 @@ template(name="defaultLayout")
   body    
     #container
       #app
-        +header
-        main
-          +yield
-        +footer
+        if finishedLoading
+          +header
+          main
+            +yield
+          +footer
+        else
+          +Spinner
