@@ -1,19 +1,15 @@
 ReactMeteor.createClass
-  templateName: "SiteGrid"
+  templateName: "SiteIndex"
 
   getMeteorState: ->
     sites: Site.find({}, {sort: {position: 1}})
 
-  primaryImagePath: (name) ->
-    underscore_name = name.toLowerCase().split(" ").join("_")
-    "/images/primary_#{underscore_name}.png"
-
   render: ->
-    <ul className='site-grid grid'>
+    <ul className='site-index grid'>
       {
         @state.sites.map (item) =>
           <li key={item._id}>
-            <img src={@primaryImagePath(item.name)} />
+            <img src={"/images/primary_#{item.slug}.png"} />
             <div className='overlay' >
               <div className='info'>
                 <div className='site-name'>

@@ -1,6 +1,5 @@
 Meteor.startup(->
   # Site.remove({})
-  console.log Site.find().count()
   if Site.find().count() == 0
     console.log "adding new entries"
     sites = [
@@ -178,7 +177,10 @@ Meteor.startup(->
     ]
 
     _.each sites, (site) ->
+      slug = site.name.toLowerCase().split(" ").join("_")
+      console.log "insert slug #{slug}"
       Site.insert
+        slug: slug
         name: site.name
         position: site.position
         dateRange: site.dateRange

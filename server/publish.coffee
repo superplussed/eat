@@ -8,14 +8,3 @@ Site.allow
     true
   remove: ->
     true
-
-Meteor.publish "TechSkill", ->
-  return TechSkill.find()
-
-TechSkill.allow
-  insert: ->
-    true
-  update: ->
-    true
-  remove: ->
-    true

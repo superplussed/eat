@@ -1,5 +1,8 @@
 @Site = new Meteor.Collection("Site",
   schema: new SimpleSchema(
+    slug:
+      type: String
+      label: "Slug"
     name:
       type: String
       label: "Name"
