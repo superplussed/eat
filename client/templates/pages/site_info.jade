@@ -1,0 +1,11 @@
+template(name="siteInfo")
+  .block
+    .info
+      .site-name=site.name
+      .role=site.role
+      .date-range=site.dateRange
+    .detail
+      +UI.dynamic template=descriptionTemplate
+      .tech-box
+        ul
+          li

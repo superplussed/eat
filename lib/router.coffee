@@ -10,3 +10,4 @@ Router.map ->
 
   @route "site_show",
     path: "/site/:slug"
+    controller: @SiteShowController

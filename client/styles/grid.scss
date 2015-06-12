@@ -19,16 +19,21 @@ $gap: 4px;
   .overlay:hover {
     background: rgba(0, 0, 0, 1); 
   }
-  li {
-    border: 20px solid #121212;
+  .column, .block {
     display: inline-block;
-    width: calc(50% - 2px);
+    width: calc(50% - 3px);
+  }
+  .block {
+    border: 20px solid #121212;
     margin-bottom: $gap;
     position: relative;
-    img {
-      display: block;
-      max-width: 100%;
-      max-height: 100%;
-    }
+  }
+  .column .block {
+    width: 100%;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
