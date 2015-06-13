@@ -1,0 +1,10 @@
+template(name="index")
+  ul.site-index.grid
+    each sites
+      li.block(id=slug)
+        img(src="/images/primary_#{slug}.png")
+        .overlay
+          .info
+            .site-name=name 
+            .role=role
+            .date-range=dateRange
