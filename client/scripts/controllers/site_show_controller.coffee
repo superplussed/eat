@@ -15,3 +15,13 @@ class @SiteShowController extends RouteController
       nextPosition = if @site.position == 1 then siteCount else @site.position - 1
       nextSite = Site.findOne({position: nextPosition})
       Router.go("/site/#{nextSite.slug}")
+
+  Template.SiteShow.rendered = ->
+    console.log "here"
+    Zoomerang
+      .config
+        maxHeight: 400
+        maxWidth: 400
+        bgColor: '#000'
+        bgOpacity: .85
+      .listen('.zoom')
