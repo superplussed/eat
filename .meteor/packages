@@ -7,7 +7,6 @@
 meteor-platform
 insecure
 coffeescript
-reactjs:react
 fourseven:scss
 mquandalle:jade
 iron:router
@@ -15,4 +14,3 @@ wolves:bourbon
 aldeed:collection2
 underscore
 natestrauser:font-awesome
-jhartma:cjsx

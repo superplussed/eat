@@ -2,12 +2,13 @@ Router.configure
   layoutTemplate: 'defaultLayout'
 
 Router.map ->
-  @route "site_index",
+  @route "TestIndex",
     path: "/",
+    controller: @TestIndexController,
 
   @route "about",
     path: "/about",
 
   @route "site_show",
-    path: "/site/:slug"
+    path: "/site/:slug",
     controller: @SiteShowController

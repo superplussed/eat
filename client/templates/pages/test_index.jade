@@ -1,0 +1,11 @@
+template(name="TestIndex")
+  ul.site-index.grid
+    each sites
+      a(href="/site/#{slug}")
+        li.block
+          img(src="/images/primary_#{slug}.png")
+          .overlay
+            .info
+              .site-name=name 
+              .role=role
+              .date-range=dateRange
