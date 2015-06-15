@@ -17,17 +17,16 @@
   }
 }
 
-.zoomable:hover .icon-bg {
+.zoom:hover ~ .icon-bg {
   opacity: 1;
 }
 .thumbnail {
   position: relative;
-  a {
-    text-decoration: none;
-  }
-
   img {
     width: 100%;
+  }
+  a {
+    text-decoration: none;
   }
 }
 

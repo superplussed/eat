@@ -5,7 +5,10 @@ template(name="eat_the_web")
 
     .column
       .block
-        img.zoom(src='/images/eat_the_web_1_1000w.png')
+        .thumbnail
+          img.zoom(src='/images/eat_the_web_1_1000w.png', data-action="zoom")
+          .icon-bg
+            i.fa.fa-search-plus.fa-lg
         figcaption
           h5 The DOM Mapper.
           p Data attributes can be mapped to DOM nodes on this page.

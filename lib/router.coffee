@@ -11,7 +11,6 @@ Router.map ->
 
   @route "test",
     path: "/test",
-    controller: @TestController,
 
   @route "site_show",
     path: "/site/:slug",

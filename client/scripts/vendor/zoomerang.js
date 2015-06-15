@@ -167,12 +167,15 @@
                 ? document.querySelector(el)
                 : el
 
+            this.originalWidth = target.clientWidth;
+            this.originalHeight = target.clientHeight;
+
             shown = true
             lock = true
             parent = target.parentNode
 
             var p     = target.getBoundingClientRect(),
-                scale = Math.min(options.maxWidth / p.width, options.maxHeight / p.height),
+                scale = $("#app").width() / this.originalWidth,
                 dx    = p.left - (window.innerWidth - p.width) / 2,
                 dy    = p.top - (window.innerHeight - p.height) / 2
 
@@ -191,9 +194,9 @@
                 transition: ''
             }, true)
 
-            // deal with % width and height
             var wPctMatch = target.style.width.match(percentageRE),
                 hPctMatch = target.style.height.match(percentageRE)
+
             if (wPctMatch || hPctMatch) {
                 var wPct = wPctMatch ? +wPctMatch[1] / 100 : 1,
                     hPct = hPctMatch ? +hPctMatch[1] / 100 : 1
@@ -201,13 +204,24 @@
                     width: ~~(p.width / wPct) + 'px',
                     height: ~~(p.height / hPct) + 'px'
                 })
+            } else {
+                setStyle(wrapper, {
+                   width:  this.originalWidth + 'px',
+                   height: this.originalHeight  + 'px'
+               }) 
+                setStyle(target, {
+                    width:  this.originalWidth + 'px',
+                    height: this.originalHeight  + 'px'
+                }) 
             }
 
-            // insert overlay & placeholder
+
+            target.classList.add("zoomerang")
             parent.appendChild(overlay)
             parent.appendChild(wrapper)
             parent.insertBefore(placeholder, target)
             wrapper.appendChild(target)
+
             overlay.style.display = 'block'
 
             // force layout
