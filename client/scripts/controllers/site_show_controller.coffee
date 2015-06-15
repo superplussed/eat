@@ -4,18 +4,15 @@ class @SiteShowController extends RouteController
     site: Site.findOne({slug: Router.current().params.slug})
   onAfterAction: ->
     console.log "after action"
-    Template.SiteShow.rendered = ->
+    initializeZoomerang = ->
       Zoomerang
         .config
-          maxHeight: 400
-          maxWidth: 400
           bgColor: '#FFF'
           bgOpacity: .95
-          onOpen: (el) ->
-            $(el).removeClass("contain")
-          onClose: (el) ->
-            console.log "close"
         .listen('.zoom')
+
+    setTimeout initializeZoomerang, 500
+    
 
 
   Template.SiteShow.events 
@@ -30,3 +27,4 @@ class @SiteShowController extends RouteController
       nextPosition = if @site.position == 1 then siteCount else @site.position - 1
       nextSite = Site.findOne({position: nextPosition})
       Router.go("/site/#{nextSite.slug}")
+
