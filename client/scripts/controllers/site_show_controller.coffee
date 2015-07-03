@@ -3,15 +3,15 @@ class @SiteShowController extends RouteController
     descriptionTemplate: "#{Router.current().params.slug}_description"
     site: Site.findOne({slug: Router.current().params.slug})
   onAfterAction: ->
-    console.log "after action"
     initializeZoomerang = ->
       Zoomerang
         .config
           bgColor: '#FFF'
           bgOpacity: .95
         .listen('.zoom')
-
-    setTimeout initializeZoomerang, 500
+    setTimeout initializeZoomerang, 1
+    Template.SiteShow.rendered =>
+      initializeZoomerang()
     
 
 
