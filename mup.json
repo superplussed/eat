@@ -2,7 +2,7 @@
   // Server authentication info
   "servers": [
     {
-      "host": "dokku1",
+      "host": "178.62.69.250",
       // "username": "root",
       // "password": "password"
       // or pem file (ssh based authentication)
