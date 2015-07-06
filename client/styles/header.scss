@@ -166,13 +166,16 @@ header {
   }
 
   nav {
+    position: absolute;
+    right: 0;
+    top: 84px;
     font-size: 23px;
-    margin-top: 93px;
     float: right;
     text-align: right;
-    line-height: 30px;
+    line-height: 36px;
     a {
       @include transition (all 0.2s ease-in-out);
+      line-height: 30px;
       display: inline-block;
       padding: 2px 10px 0 10px;
       margin: 0 5px;
