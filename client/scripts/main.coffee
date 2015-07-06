@@ -1,5 +1,7 @@
 Meteor.subscribe "Site"
 
+document.title = "EATING THE .COM";
+
 $ ->
   WebFont.load
     typekit:
