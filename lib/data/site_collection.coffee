@@ -32,6 +32,15 @@
   ]
   role: 'Project Creator'
 ,
+  name: "Techmasters"
+  position: 2
+  dateRange: "Feb 2015 - Present"
+  tech: [
+    name: "jQuery"
+    type: "frontend"
+  ]
+  role: "Project Creator"
+,
   name: "3rd Ward"
   position: 2
   dateRange: "Sept 2012 - Sept 2013"
