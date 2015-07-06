@@ -42,7 +42,7 @@
   role: "Project Creator"
 ,
   name: "3rd Ward"
-  position: 2
+  position: 3
   dateRange: "Sept 2012 - Sept 2013"
   tech: [
     name: "jQuery"
@@ -75,7 +75,7 @@
   role: 'CTO, Lead Developer & Designer'
 ,
   name: "Eat The Web"
-  position: 3
+  position: 4
   dateRange: "Sept 2013 - Jan 2014"
   tech: [
     name: "Angular.js"
@@ -108,7 +108,7 @@
   role: 'Project Creator'
 ,
   name: "Robusto"
-  position: 4
+  position: 5
   dateRange: "2011-2012"
   role: 'Project Creator'
   tech: [
@@ -153,7 +153,7 @@
   ]
 ,
   name: "Xpert Sports"
-  position: 5
+  position: 6
   dateRange: "2003-2008, Sold in 2007 to Bodog Sports"
   description: "Xpert Sports was fantasy football league management software."
   role: 'Sole Founder, Developer & Designer'
