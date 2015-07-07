@@ -2,6 +2,7 @@
   name: "Seedlng"
   position: 1
   dateRange: "July 2014 - Present"
+  primaryImage: "/images/primary_seedlng.jpg"
   tech: [
     name: "jQuery"
     type: "frontend"
@@ -16,6 +17,9 @@
     type: "frontend"
   ,
     name: "Ruby on Rails"
+    type: "backend"
+  ,
+    name: "RubyMotion"
     type: "backend"
   ,
     name: "PostgreSQL"
@@ -33,6 +37,7 @@
   role: 'Project Creator'
 ,
   name: "Techmasters"
+  primaryImage: "/images/primary_techmasters.jpg"
   position: 2
   dateRange: "Feb 2015 - Present"
   tech: [
@@ -42,6 +47,7 @@
   role: "Project Creator"
 ,
   name: "3rd Ward"
+  primaryImage: "/images/primary_3rd_ward.png"
   position: 3
   dateRange: "Sept 2012 - Sept 2013"
   tech: [
@@ -76,6 +82,7 @@
 ,
   name: "Eat The Web"
   position: 4
+  primaryImage: "/images/primary_eat_the_web.png"
   dateRange: "Sept 2013 - Jan 2014"
   tech: [
     name: "Angular.js"
@@ -108,6 +115,7 @@
   role: 'Project Creator'
 ,
   name: "Robusto"
+  primaryImage: "/images/primary_robusto.png"
   position: 5
   dateRange: "2011-2012"
   role: 'Project Creator'
@@ -154,6 +162,7 @@
 ,
   name: "Xpert Sports"
   position: 6
+  primaryImage: "/images/primary_xpert_sports.png"
   dateRange: "2003-2008, Sold in 2007 to Bodog Sports"
   description: "Xpert Sports was fantasy football league management software."
   role: 'Sole Founder, Developer & Designer'

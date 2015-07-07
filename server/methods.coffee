@@ -11,3 +11,4 @@ Meteor.methods
         description: site.description
         role: site.role
         tech: site.tech
+        primaryImage: site.primaryImage

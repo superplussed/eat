@@ -2,7 +2,7 @@ template(name="index")
   ul.site-index.grid
     each sites
       li.block(id=slug)
-        img(src="/images/primary_#{slug}.png")
+        img(src=primaryImage)
         .overlay
           .info
             .site-name=name 
