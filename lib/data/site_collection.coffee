@@ -31,7 +31,7 @@
     name: "HAML"
     type: "backend"
   ,
-    name: "Amazon Web Services"
+    name: "Heroku"
     type: "ops"
   ]
   role: 'Project Creator'
@@ -43,6 +43,21 @@
   tech: [
     name: "jQuery"
     type: "frontend"
+  ,
+    name: "React.js"
+    type: "frontend"
+  ,
+    name: "Sass"
+    type: "frontend"
+  ,
+    name: "Ruby on Rails"
+    type: "backend"
+  ,
+    name: "Postgres"
+    type: "backend"
+  ,
+    name: "Heroku"
+    type: "ops"
   ]
   role: "Project Creator"
 ,
