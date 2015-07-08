@@ -10,7 +10,7 @@ class @SiteShowController extends RouteController
           bgOpacity: .95
         .listen('.zoom')
     setTimeout initializeZoomerang, 1
-    Template.SiteShow.rendered =>
+    $(window).resize ->
       initializeZoomerang()
     
 
