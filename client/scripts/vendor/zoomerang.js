@@ -209,10 +209,7 @@
                    width:  this.originalWidth + 'px',
                    height: this.originalHeight  + 'px'
                }) 
-                setStyle(target, {
-                    width:  this.originalWidth + 'px',
-                    height: this.originalHeight  + 'px'
-                }) 
+                
             }
 
 
