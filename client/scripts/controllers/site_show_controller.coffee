@@ -5,12 +5,13 @@ class @SiteShowController extends RouteController
   onAfterAction: ->
     setTimeout initializeZoomerang, 1
       
-  Template.SiteShow.rendered = ->
-    setTimeout initializeZoomerang, 1
-    $(window).resize ->
-      initializeZoomerang()
+Template.SiteShow.rendered = ->
+  setTimeout initializeZoomerang, 1
+  $(window).resize ->
+    initializeZoomerang()
     
 initializeZoomerang = ->
+  console.log "call init"
   Zoomerang
     .config
       bgColor: '#FFF'

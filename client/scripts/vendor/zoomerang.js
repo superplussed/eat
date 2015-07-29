@@ -260,7 +260,7 @@
 
             target.addEventListener(transEndEvent, function onEnd () {
                 target.removeEventListener(transEndEvent, onEnd)
-                setStyle(target, originalStyles)
+                $(target).removeAttr("style")
                 parent.insertBefore(target, placeholder)
                 parent.removeChild(placeholder)
                 parent.removeChild(overlay)
