@@ -2,7 +2,7 @@
   // Server authentication info
   "servers": [
     {
-      "host": "46.101.6.221",
+      "host": "178.62.79.97",
       "username": "root",
       "pem": "~/.ssh/id_rsa"
     }

@@ -22,7 +22,7 @@ body {
   background: #EEE;
   display: inline-block;
   width: 100%;
-  
+
   -webkit-font-smoothing: antialiased;
   background: #EEE;
   margin: 0;
@@ -120,7 +120,7 @@ figcaption {
     margin: 0;
   }
 }
-    
+
 .detail {
   background: #F1F1F1;
   padding: 0 10px;
@@ -145,7 +145,7 @@ figcaption {
 }
 
 .loading {
-  background: black; 
+  background: black;
 }
 
 .loading:before {
@@ -174,10 +174,25 @@ footer {
 .fluid-block {
   border: 20px solid $black;
   position: relative;
-  
+
 }
 
 .onclick {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.ratio-3-2{
+  position: relative;
+  width: 50%;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.ratio-3-2:before{
+  content: "";
+  display: block;
+  padding-top: 67%;
 }

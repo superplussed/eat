@@ -1,1 +1,1 @@
-http://blog.iansinnott.com/running-a-meteor-app-on-dokku/
+Set up digitalocean droplet as node server, selecting the main key.  Change the IP address in the mup.json.  Run "mup setup" (you will be reinstalling node), and "mup deploy".

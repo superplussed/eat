@@ -1,10 +1,10 @@
 template(name="index")
   ul.site-index.grid
     each sites
-      li.block(id=slug)
+      li.ratio-3-2.block(id=slug)
         img(src=primaryImage)
         .overlay
           .info
-            .site-name=name 
+            .site-name=name
             .role=role
             .date-range=dateRange

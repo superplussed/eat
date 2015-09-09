@@ -7,4 +7,4 @@ $ ->
     typekit:
       id: "yyo6olf"
     active: ->
-      Session.set('finishedLoading', true)
+      Session.set('textFinishedLoading', true)

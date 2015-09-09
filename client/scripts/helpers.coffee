@@ -1,5 +1,5 @@
-Handlebars.registerHelper 'finishedLoading', ->
-  Session.get('finishedLoading')
+Handlebars.registerHelper 'textFinishedLoading', ->
+  Session.get('textFinishedLoading')
 
 Handlebars.registerHelper 'nextSite', (slug) ->
   console.log "next"
@@ -14,4 +14,3 @@ Handlebars.registerHelper 'workClass', ->
 
 Handlebars.registerHelper 'aboutClass', ->
   "active" if Router.current().url == "/about"
-  

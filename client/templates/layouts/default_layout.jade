@@ -6,10 +6,10 @@ template(name="defaultLayout")
     meta(name='viewport', content='width=device-width')
     link(href="/favicon.ico", rel="shortcut icon", type="image/x-icon")
 
-  body    
+  body
     #container
       #app
-        if finishedLoading
+        if textFinishedLoading
           +header
           main
             +yield
