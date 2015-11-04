@@ -1,5 +1,5 @@
 @import "globals";
-@import "bourbon/bourbon";
+@import "{wolves:bourbon}/bourbon";
 
 .icon-bg {
   @include transition (all 0.2s ease-in-out);

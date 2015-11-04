@@ -1,5 +1,5 @@
 @SiteCollection = [
-  name: "Seedlng"
+  name: "Seedlang"
   position: 1
   dateRange: "July 2014 - Present"
   primaryImage: "/images/primary_seedlng.jpg"

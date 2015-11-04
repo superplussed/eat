@@ -4,14 +4,26 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-meteor-platform
 insecure
 coffeescript
 fourseven:scss
 mquandalle:jade
 iron:router
-wolves:bourbon
 aldeed:collection2
 underscore
 natestrauser:font-awesome
 jquery
+standard-minifiers
+meteor-base
+mobile-experience
+mongo
+blaze-html-templates
+session
+tracker
+logging
+reload
+random
+ejson
+spacebars
+check
+wolves:bourbon
